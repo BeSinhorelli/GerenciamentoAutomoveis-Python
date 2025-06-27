@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="funcao()">
+  <h1>ola mundo</h1>
+  <script>
+    function funcao() {
+      var nome = window.prompt("digite seu nome");
+      alert("ola " + nome);
+    }
+  </script>
+  <button onclick="abre()">abrir janela</button>
+  <button onclick="fechar()">fechar janela</button>
+  <script>
+    function abre() {
+      window.open("https://www.google.com.br");
+    }
+    function fechar() {
+      window.close();
+    }
+  </script>
+  <p>digite algo: </p>
+  <input type="text" name="txt" value="apague e escreva algo" onchange="funcao_caralhenta(this.value)">
+  <script>
+    function funcao_caralhenta(valor) {
+      alert("o valor foi mudado, agr é: " + valor);
+    }
+  </script>
+  <p>selecione: </p>
+  <select id="selec" onchange="lore_peidorreira()">
+    <option value="">Escolha</option>
+    <option value="audi">audi</option>
+    <option value="BMW">BMW</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="volvo">volvo</option>
+  </select>
+  <p>quando voce seleciona um novo carro, a função 'lore_peidorreira' é chamada e opção selecionada é exibida </p>
+  <p id="demo"></p>
+  <script>
+    function lore_peidorreira() {
+      var x = document.getElementById("selec").value;
+      document.getElementById("demo").innerHTML = "voce selecionou: " + x;
+    }
+  </script>
+</body>
+</html>

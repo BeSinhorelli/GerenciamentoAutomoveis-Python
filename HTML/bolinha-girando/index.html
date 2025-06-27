@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<style>
+  body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container{
+    margin-top:10%;
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    border-radius: 50%;
+    animation: rotate 3s linear infinite;
+  }
+  .box{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  @keyframes rotate{
+    100%{transform: rotate(360deg);}
+  }
+</style>
+<body>
+<div class="container">
+  <div class="box"></div>
+</div>
+
+</body>
+
+</html>

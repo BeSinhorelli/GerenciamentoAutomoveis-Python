@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wii Shop Channel</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      /* Adicione esta linha para o cursor personalizado */
+      cursor: url('wii.png'), auto; /* Substitua 'wii_pointer.png' pelo caminho real da sua imagem */
+    }
+
+    .screen {
+      background: linear-gradient(to bottom, #fefefe, #e6f0f9);
+      border-radius: 40px;
+      width: 620px;
+      height: 460px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.4);
+      padding: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      border: 8px solid #222;
+    }
+
+    .logo {
+      width: 140px;
+      margin-top: 10px;
+    }
+
+    .title {
+      font-size: 30px;
+      color: #009fe3;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 white;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+       cursor: url('wii.png'), auto;
+    }
+
+    .btn {
+      background: linear-gradient(to bottom, #ffffff, #d8e9f6);
+      border: 2px solid #b3cee4;
+      border-radius: 20px;
+      padding: 14px 40px;
+      font-size: 18px;
+      color: #444;
+      cursor: pointer; /* Este 'cursor: pointer;' será sobrescrito pelo cursor personalizado do body, a menos que você o remova ou defina um cursor diferente para os botões */
+      min-width: 100px;
+      text-align: center;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.15), 0 2px 4px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+       cursor: url('wii.png'), auto;
+    }
+
+    .btn:hover {
+      background: linear-gradient(to bottom, #e6f3fb, #cde2f4);
+      transform: scale(1.05);
+    }
+
+    .arrow-left, .arrow-right {
+      position: absolute;
+      top: 45%;
+      transform: translateY(-50%);
+      font-size: 36px;
+      color: #009fe3;
+      user-select: none;
+      text-shadow: 1px 1px 0 white;
+      cursor: pointer; /* Este também será sobrescrito se o cursor do body for aplicado globalmente */
+    }
+
+    .arrow-left {
+      left: 20px;
+    }
+
+    .arrow-right {
+      right: 20px;
+    }
+
+    /* Hover effect for big + and - */
+    .arrow-left::after,
+    .arrow-right::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 48px;
+      color: #009fe3;
+      background-color: white;
+      border: 3px solid #009fe3;
+      border-radius: 12px;
+      padding: 10px 20px;
+      display: none;
+      z-index: 1;
+    }
+
+    .arrow-left:hover::after {
+      content: '−';
+      display: block;
+       cursor: url('wii.png'), auto;
+    }
+
+    .arrow-right:hover::after {
+      content: '+';
+      display: block;
+       cursor: url('wii.png'), auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="screen">
+  <div class="arrow-left">◀</div>
+  <div class="arrow-right">▶</div>
+
+  <div style="text-align: center; margin-top: 0px;">
+    <img 
+      src="https://th.bing.com/th/id/R.87f84f0eb3fec546b6644df7a536617a?rik=gc42aWEWIbYNcA&riu=http%3a%2f%2fvignette1.wikia.nocookie.net%2flogopedia%2fimages%2f1%2f17%2fWii_Shop_Channel.png%2frevision%2flatest%3fcb%3d20170311153817&ehk=mJqE8iZQI7FIOVTVBbetdvfI%2bt%2bkbSyRffpc87jgDeo%3d&risl=&pid=ImgRaw&r=0" 
+      alt="Wii Shop Logo" 
+      class="logo"
+      style="width: 90%; height: auto; display: block; margin: 0 auto;"
+    >
+  </div>
+
+  <div class="buttons">
+    <div class="btn">Wii Menu</div>
+    <div class="btn">Start</div>
+  </div>
+</div>
+
+</body>
+</html>

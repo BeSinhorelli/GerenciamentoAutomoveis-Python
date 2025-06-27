@@ -1,0 +1,72 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin:0;
+  padding:0;
+}
+:root{
+  font-size:16;
+}
+body{
+  background-color: #ffffff;
+  font-family: Arial;
+  margin: 5%;
+}
+h1{
+color:red;
+  text-align:center;
+  font-size:3em;
+  font: "Verdana";
+}
+u{
+  color:red;
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+h2{
+  color:gray;
+  text-align:center;
+  font-size:34px;
+}
+a{
+  text-decoration:none;
+  color:gray;
+  font-weight:bold;
+  font-size: 24px;
+}
+
+a:hover{
+  color: red;
+  font-size: 36px;
+}
+.txt1{
+  color:red;
+  font-size:26px;
+  display: inline-block;
+  text-shadow: 2px 2px 2px black; /*deixa o testo com sombra*/
+  box-shadow: 0px 0px 10px #000000; /* */
+}
+.img1{
+  heigth: 120px;
+  width: 120px;
+}
+.imgs{
+  border-top: 7px solid gray;
+  border-bottom: 7px solid gray;
+}
+.verm{
+  display: inline-block;
+  color:red;
+}
+.img3{
+  background-color: black;
+}
+p{
+  background: rgba(0,0,0,0.5);
+  color:white;
+  font-size: 20px;
+}
